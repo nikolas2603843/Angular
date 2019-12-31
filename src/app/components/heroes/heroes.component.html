@@ -1,0 +1,12 @@
+<h1>Heroes <small>Marver y Dc</small></h1>
+<div class="card-columns">
+    <div class="card animated fadeIn fast" *ngFor="let heroes of heroes;let i =index">
+        <img src="{{heroes.img}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{heroes.nombre}}</h5>
+            <p class="card-text">{{heroes.bio}}</p>
+            <p class="card-text"><small class="text-muted">{{heroes.aparicion}}</small></p>
+            <a [routerLink]="['/heore',i]" class="btn btn-outline-primary">Ver mas..</a>
+        </div>
+    </div>
+</div>
